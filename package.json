@@ -1,0 +1,21 @@
+{
+  "name": "cypressproject1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.4"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0"
+  }
+}
